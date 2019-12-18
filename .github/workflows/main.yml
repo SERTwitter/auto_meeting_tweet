@@ -1,4 +1,4 @@
-name: Deploy SER script: `auto_meeting_tweet.R`
+name: 'Deploy SER script: `auto_meeting_tweet.R`'
 'on':
   schedule:
     - cron:  '0 18 * * *'
@@ -13,7 +13,7 @@ jobs:
         run: |-
           Rscript -e "install.packages('remotes', repos = 'https://demo.rstudiopm.com/all/__linux__/bionic/latest')"
           Rscript -e "remotes::install_deps(dependencies = TRUE, repos = 'https://demo.rstudiopm.com/all/__linux__/bionic/latest')"
-      - name: Deploy script: `auto_meeting_tweet.R`
+      - name: 'Deploy script: `auto_meeting_tweet.R`'
         env:
           DRIVE_AUTH_TOKEN_PATH: $
           GMAILR_APP: $
