@@ -1,7 +1,7 @@
 name: Deploy SER script: `auto_meeting_tweet.R`
 'on':
   schedule:
-    - cron:  0 18 * * *
+    - cron:  '0 18 * * *'
 
 jobs:
   build:
